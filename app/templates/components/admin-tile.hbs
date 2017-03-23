@@ -1,0 +1,7 @@
+<h1>{{blog.title}}</h1>
+<button {{action 'delete' blog}}>delete</button>
+<ul>
+  {{#each blog.comments as |comment|}}
+    {{comment-tile  comment=comment destroyComment="destroyComment"}}
+    {{/each}}
+</ul>

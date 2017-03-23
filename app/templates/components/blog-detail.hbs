@@ -2,4 +2,8 @@
 <img src="{{blog.image}}" alt="" />
 <h3>By: {{blog.author}}</h3>
 {{blog.story}}
-<button {{action 'delete' blog}}>delete</button>
+<ul>
+  {{#each blog.comments as |comment|}}
+    <li>{{comment.comment}}</li>
+    {{/each}}
+</ul>

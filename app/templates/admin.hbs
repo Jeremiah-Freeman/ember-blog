@@ -1,0 +1,5 @@
+{{#each model.posts as |blog|}}
+{{admin-tile blog=blog destroyDetail="destroyDetail" destroyComment="destroyComment" update="update"}}
+{{update-post blog=blog update="update"}}
+{{/each}}
+{{new-blog saveBlog2="saveBlog3" }}
